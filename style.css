@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(315deg, rgba(2, 0, 36, .8) 0%, rgba(97, 9, 121, .8) 24%, rgba(50, 106, 185, .8) 65%, rgba(0, 212, 255, .5) 100%), url(./img/HIVI-KOMINFO-1-3.jpeg);
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-block: 5px;
+    margin-block-end: 25px;
+}
+
+h1,
+p {
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    background: rgba(3, 4, 73, 0.5);
+    margin-inline: auto;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-block: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(196, 38, 135);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(28, 1, 36, 0.4);
+}
+
+span {
+    display: inline-block;
+}
+
+button:hover {
+    text-decoration: underline;
+    background-color: rgb(255, 43, 174);
+    cursor: pointer;
+}
